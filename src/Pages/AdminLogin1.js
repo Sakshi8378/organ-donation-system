@@ -30,7 +30,7 @@ function AdminLogin1()
             
     <form className="mx-auto">
     <div className="form-group row">
-            <label htmlFor="userId" className="col-sm-3 col-form-label">User ID:</label>
+            <label htmlFor="userId" className="col-sm-3 col-form-label" >User ID:</label>
             <div className="col-sm-9">
                 <input type="text" className="form-control" id="userId" placeholder="Enter your user ID" onChange={(e)=>setusername(e.target.value)} />
             </div>
@@ -44,7 +44,7 @@ function AdminLogin1()
         </div>
         <div className="form-group row">
             <div className="col-sm-9 offset-sm-3">
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary" onClick={Save}>Submit</button>
             </div>
         </div>
     </form>

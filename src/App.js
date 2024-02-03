@@ -10,7 +10,7 @@ import DonorReg from './Pages/DonorReg';
 import Home from './Pages/Home';
 import AdminLogin1 from './Pages/AdminLogin1'
 import PatientReg from './Pages/PatientReg'
-
+import Admindashboard from './Pages/Admindashboard'
 function App() {
   return (
  <>
@@ -23,6 +23,7 @@ function App() {
       <Route path="/Home" element ={<Home/>}></Route>
       <Route path="/PatientReg" element ={<PatientReg/>}></Route>
       <Route path="/AdminLogin1" element ={<AdminLogin1/>}></Route>
+      <Route path="/Admindashboard" element ={<Admindashboard/>}></Route>
       
   </Routes>
   </BrowserRouter>
