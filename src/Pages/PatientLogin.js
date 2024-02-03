@@ -1,11 +1,8 @@
 import Navbar1 from "../Components/Navbar1";
-import './AdminLogin1.css'
+import './PatientLogin.css'
 import { useState } from "react";
-import {useNavigate } from "react-router-dom";
-function AdminLogin1()
+function PatientLogin()
 {
-
-    const navigate3=useNavigate();
     const [username,setusername]=useState("");
     const [password,setpassword]=useState("");
     const Save =()=>
@@ -20,23 +17,7 @@ function AdminLogin1()
             alert("password cannot be empty");
             return false;
         }
-        if(username==="admin" )
-        {
-            if( password ==="123")
-            {
-                navigate3("/Admindashboard")
-            }
-            else{
-                alert("Incorrect Password");
-            return false;
-            }
-                      
-            
-        }
-        else{
-            alert("Incorrect Username");
-            return false;
-        }
+       
     }
         let styleh2={
             
@@ -46,7 +27,7 @@ function AdminLogin1()
         <>
         <div className="xyz">
         <Navbar1/>
-        <h2 style={{textAlign : 'center',marginTop :'5px'}}>Admin Login Form</h2>
+        <h2 style={{textAlign : 'center',marginTop :'5px'}}>Patient Login Form</h2>
         <div className="container fadmin mt-3 bg-white p-4 rounded" style={{ maxWidth: '50%' }}>
             
     <form className="mx-auto">
@@ -65,7 +46,7 @@ function AdminLogin1()
         </div>
         <div className="form-group row">
             <div className="col-sm-9 offset-sm-3">
-                <button type="submit" className="btn btn-primary" onClick={Save}>Submit</button>
+                <button type="submit" className="btn btn-success" onClick={Save}>Submit</button>
             </div>
         </div>
     </form>
@@ -83,4 +64,4 @@ function AdminLogin1()
         
         </>
     );
-}export default AdminLogin1;
+}export default PatientLogin;

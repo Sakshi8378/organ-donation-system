@@ -1,7 +1,30 @@
 import Navbar1 from "../Components/Navbar1";
 import './DonorReg.css'
+import { useState } from "react";
 function DonorReg()
 {
+    const [username,setusername]=useState("");
+    const [password,setpassword]=useState("");
+    const [password1,setpassword1]=useState("");
+    const Save1 =()=>
+    {
+        if(username.length==0)
+        {
+            alert("Usename cannot be empty");
+            return false;
+        }
+        else if(password.length==0)
+        {
+            alert("password cannot be empty");
+            return false;
+        }
+        if(password != password1)
+        {
+                      
+            alert("Reenterd password not similar to previous password");
+            return false;
+        }
+    }
         let styleh2={
             
         }
@@ -63,7 +86,7 @@ function DonorReg()
         <div className="form-group row">
             <label htmlFor="email" className="col-sm-3 col-form-label">Email:</label>
             <div className="col-sm-9">
-                <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+                <input type="email" className="form-control" id="email" placeholder="Enter your email" onChange={(e)=>setusername(e.target.value)} />
                 {/* You might want to add email validation here */}
             </div>
         </div>
@@ -114,8 +137,21 @@ function DonorReg()
             </div>
         </div>
         <div className="form-group row">
+            <label htmlFor="password" className="col-sm-3 col-form-label">Password:</label>
+            <div className="col-sm-9">
+                <input type="password" className="form-control" id="password" placeholder="Enter your password" onChange={(e)=>setpassword(e.target.value)}/>
+            </div>
+        </div>
+
+        <div className="form-group row">
+            <label htmlFor="reenterPassword" className="col-sm-3 col-form-label">Re-enter Password:</label>
+            <div className="col-sm-9">
+                <input type="password" className="form-control" id="reenterPassword" placeholder="Re-enter your password" onChange={(e)=>setpassword1(e.target.value)} />
+            </div>
+        </div>
+        <div className="form-group row">
             <div className="col-sm-9 offset-sm-3">
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary"  onClick={Save1}>Submit</button>
             </div>
         </div>
     </form>

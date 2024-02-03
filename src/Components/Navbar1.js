@@ -23,6 +23,15 @@ function Navbar1() {
         {
           navigate("/AdminLogin1")
         }
+        else if(flag===5)
+        {
+          navigate("/DonorLogin")
+        }
+        else if(flag===6)
+        {
+          navigate("/PatientLogin")
+        }
+
         
             
     }
@@ -47,7 +56,7 @@ function Navbar1() {
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Donor</a>
                         <div class="dropdown-menu m-0">
                             <a onClick={()=>goto1(2)}  class="dropdown-item">Registration</a>
-                            <a  class="dropdown-item">Login</a>
+                            <a  onClick={()=>goto1(5)} class="dropdown-item">Login</a>
                             
                         </div>
                     </div>
@@ -56,16 +65,17 @@ function Navbar1() {
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Patient</a>
                         <div class="dropdown-menu m-0">
                             <a onClick={()=>goto1(3)}  class="dropdown-item">Registration</a>
-                            <a href="feature.html" class="dropdown-item">Login</a>
+                            <a  onClick={()=>goto1(6)}  class="dropdown-item">Login</a>
                             
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">For Hospital</a>
                         <div class="dropdown-menu m-0">
-                            <a onClick={()=>goto1(3)}  class="dropdown-item">Registration</a>
-                            <a  class="dropdown-item">Login</a>
-                            
+                            <a onClick={()=>goto1(3)}  class="dropdown-item">Registration as patient</a>
+                            <a onClick={()=>goto1(6)} class="dropdown-item">Login as patient</a>
+                            <a onClick={()=>goto1(2)}  class="dropdown-item">Registration as Donor</a>
+                            <a  onClick={()=>goto1(5)} class="dropdown-item">Login as Donor</a>
                         </div>
                     </div>
 
