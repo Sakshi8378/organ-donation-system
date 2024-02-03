@@ -1,24 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
+import navbar from './Components/navbar';
+import Navbar1 from './Components/Navbar1';
+import Footer from './Components/Footer';
+import organdonationimage from './organdonationimage.jpg'
+import Footer1 from './Components/Footer1';
+import { BrowserRouter, Routes,Route,Link } from 'react-router-dom';
+import DonorReg from './Pages/DonorReg';
+import Home from './Pages/Home';
+import AdminLogin1 from './Pages/AdminLogin1'
+import PatientReg from './Pages/PatientReg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+  <BrowserRouter>
+  <Routes>
+    <>
+    </>
+      <Route path="/DonorReg" element ={<DonorReg/>}></Route>
+      <Route path="/" element ={<Home/>}></Route>
+      <Route path="/Home" element ={<Home/>}></Route>
+      <Route path="/PatientReg" element ={<PatientReg/>}></Route>
+      <Route path="/AdminLogin1" element ={<AdminLogin1/>}></Route>
+      
+  </Routes>
+  </BrowserRouter>
+
+
+ 
+
+
+ </>
+   
   );
 }
 
