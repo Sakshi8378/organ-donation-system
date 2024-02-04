@@ -3,6 +3,7 @@ import './Admindashboard.css'
 import { useState } from "react";
 import {useNavigate } from "react-router-dom";
 import AdminNavbar from '../Components/AdminNavbar'
+import Footer3 from '../Components/Footer3'
 function AdminPatientDetails()
 {
 
@@ -55,7 +56,7 @@ function AdminPatientDetails()
 
 
 
-
+<div className="footer"> <Footer3/></div>
 </div>
 
 

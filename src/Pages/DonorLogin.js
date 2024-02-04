@@ -1,4 +1,5 @@
 import Navbar1 from "../Components/Navbar1";
+import Footer3 from '../Components/Footer3'
 import './DonorLogin.css'
 import { useState } from "react";
 function DonorLogin()
@@ -55,7 +56,7 @@ function DonorLogin()
 
 
 
-
+<div className="footer"> <Footer3/></div>
 
 </div>
 

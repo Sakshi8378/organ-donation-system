@@ -1,4 +1,5 @@
 import Navbar1 from "../Components/Navbar1";
+import Footer3 from '../Components/Footer3'
 import './DonorReg.css'
 import { useState } from "react";
 function DonorReg()
@@ -34,7 +35,7 @@ function DonorReg()
         <div className="xyz">
         <Navbar1/>
         <h2 style={{textAlign : 'center',marginTop :'5px'}}>Donor Registration Form</h2>
-        <div className="container fadmin mt-3 bg-white p-4 rounded" style={{ maxWidth: '50%' }}>
+        <div className="container formbdy fadmin mt-3 bg-white p-3 rounded mb-3" style={{ maxWidth: '50%' }}>
             
     <form className="mx-auto">
         <div className="form-group row mb-1">
@@ -154,6 +155,7 @@ function DonorReg()
                 <button type="submit" className="btn btn-primary"  onClick={Save1}>Submit</button>
             </div>
         </div>
+        
     </form>
 </div>
 
@@ -161,7 +163,7 @@ function DonorReg()
 
 
 
-
+<div className="footer"> <Footer3/></div>
 </div>
 
 

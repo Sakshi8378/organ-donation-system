@@ -40,7 +40,7 @@ function Navbar1() {
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">We Donate</a>
+      <a class="navbar-brand" href="#"><span className="text-primary"><h2>We Donate</h2></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -104,7 +104,23 @@ function Navbar1() {
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li> */}
+
         </ul>
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a  onClick={()=>goto1(1)} class="nav-link " aria-current="page" href="tel:+918378859875"><p><span className="text-primary" style={{ whiteSpace:'nowrap'}}>91-9898899988</span></p></a>
+          </li>
+          <li class="nav-item">
+            <a  onClick={()=>goto1(1)} class="nav-link " aria-current="page" href="mailto:wedonate@gmail.com"><span className="text-primary"><h5>wedonate@gmail.com</h5></span></a>
+          </li>
+        </ul>
+         
+
+
+
+
+
+
         {/* <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
           <button class="btn btn-outline-success" type="submit">Search</button>

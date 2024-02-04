@@ -1,5 +1,6 @@
 import Navbar1 from "../Components/Navbar1";
 import './PatientLogin.css'
+import Footer3 from '../Components/Footer3'
 import { useState } from "react";
 function PatientLogin()
 {
@@ -54,7 +55,7 @@ function PatientLogin()
 
 
 
-
+<div className="footer"> <Footer3/></div>
 
 
 </div>

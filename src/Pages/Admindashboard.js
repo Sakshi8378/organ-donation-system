@@ -3,6 +3,7 @@ import './Admindashboard.css'
 import AdminNavbar from '../Components/AdminNavbar'
 import { useState } from "react";
 import {useNavigate } from "react-router-dom";
+import Footer3 from '../Components/Footer3'
 function Admindashboard()
 {
 
@@ -18,7 +19,7 @@ function Admindashboard()
 
 
 
-
+        <div className="footer"> <Footer3/></div>
 </div>
 
 

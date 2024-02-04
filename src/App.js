@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import navbar from './Components/navbar';
 import Navbar1 from './Components/Navbar1';
-import Footer from './Components/Footer';
+
 import organdonationimage from './organdonationimage.jpg'
 import Footer1 from './Components/Footer1';
 import { BrowserRouter, Routes,Route,Link } from 'react-router-dom';

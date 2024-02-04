@@ -1,5 +1,6 @@
 import Navbar1 from "../Components/Navbar1";
 import './AdminLogin1.css'
+import Footer3 from '../Components/Footer3'
 import { useState } from "react";
 import {useNavigate } from "react-router-dom";
 function AdminLogin1()
@@ -75,7 +76,7 @@ function AdminLogin1()
 
 
 
-
+<div className="footer"> <Footer3/></div>
 </div>
 
 
