@@ -106,14 +106,14 @@ function Navbar1() {
           </li> */}
 
         </ul>
-        <ul class="navbar-nav ms-auto">
+        {/* <ul class="navbar-nav ms-auto">
         <li class="nav-item">
             <a  onClick={()=>goto1(1)} class="nav-link " aria-current="page" href="tel:+918378859875"><p><span className="text-primary" style={{ whiteSpace:'nowrap'}}>91-9898899988</span></p></a>
           </li>
           <li class="nav-item">
             <a  onClick={()=>goto1(1)} class="nav-link " aria-current="page" href="mailto:wedonate@gmail.com"><span className="text-primary"><h5>wedonate@gmail.com</h5></span></a>
           </li>
-        </ul>
+        </ul> */}
          
 
 

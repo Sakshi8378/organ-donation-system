@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope,faPhone} from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
 function Footer3()
 {
 
@@ -72,10 +76,20 @@ function Footer3()
     </div> */}
     <div class="container-fluid footer bg-dark text-white-50 border-top py-2" style={{borderColor: "rgba(256, 256, 256, .1) !important;"}}>
         <div class="container">
-            <div class="row">
-                <div class=" text-center text-md-left mb-3 mb-md-0">
+            <div class="row align-items-center">
+                <div class=" text-center text-md-left mb-3 mb-md-0 col-md-11">
                     <p class="m-0">Copyright &copy; <a class="text-primary" href="#">We Donate</a>. All Rights Reserved.
                     </p>
+                    
+                </div>
+                <div className="col-md-1 d-flex justify-content-end">
+                <a href='mailto:wedonate@gmail.com' className='mr-3 social-icon' style={{marginRight : "15px"}}><FontAwesomeIcon icon={faEnvelope} /></a>
+                <a href='mailto:wedonate@gmail.com' className='mr-3 social-icon' style={{marginRight : "15px"}}><FontAwesomeIcon icon={faTwitter}/></a>
+                <a href='mailto:wedonate@gmail.com' className='mr-2 social-icon' style={{marginRight : "15px"}}><FontAwesomeIcon icon={faFacebook}/></a>
+                <a href='mailto:wedonate@gmail.com' className='mr-2 social-icon' style={{marginRight : "15px"}}><FontAwesomeIcon icon={faInstagram}/></a>
+                <a href='mailto:wedonate@gmail.com' className='mr-2 social-icon' style={{marginRight : "15px"}}><FontAwesomeIcon icon={faLinkedin}/></a>
+                <a href='mailto:wedonate@gmail.com' className='mr-2 social-icon' style={{marginRight : "15px"}}><FontAwesomeIcon icon={faPhone} /></a>
+                
                 </div>
                 {/* <div class="col-md-6 text-center text-md-right">
                     <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
